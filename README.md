@@ -59,20 +59,42 @@ Then EDA was divided into 4 parts:
 **1. Exploring Gender differences (EDA1)**      
 
 This part of analysis aims to discover the gender differences for attrition. 
+![EDA1](https://github.com/vita-levytska/HR-Analytics/blob/main/Visualizations/eda1_overtime.jpeg)
+
+For those employees that left, overtime is independent of gender, and more employees that left did overtime, than those who stayed in the company. 
 
 **2. Exploring Education Field differences (EDA2)**
 
 This part aims to dicover some differences pertaining to  different fields to help us better understand the dynamics of attrition in each field represented here.    
+![EDA2](https://github.com/vita-levytska/HR-Analytics/blob/main/Visualizations/eda2_years_curr_manager.jpeg)
+
+We see a similar trend among all Education Fields, employees left after either 2 or 7 years with current manager.
 
 **3. Salary differences (EDA3)**
 
 In this part we examine how much salary influenced attrition of employees and what other factors together with salary influence attrition. 
+![EDA3](https://github.com/vita-levytska/HR-Analytics/blob/main/Visualizations/eda3_education.jpeg)
+
+Employees that have education level below college or Doctorate degrees left the company while having the same  or higher salary than the employees that did not quit their job. Those with college, bachelor or master degrees left their job while having the same or lower salary than those who did not leave their job. 
 
 **4. Job Level differences (EDA4)**   
 
 In this part we look at different job levels more in depths in how they influence attrition along with other factors.    
+![EDA4](https://github.com/vita-levytska/HR-Analytics/blob/main/Visualizations/eda4_job_satisfaction.jpeg)
+
+- At Job Levels 1 and 5: the employees who left had lower levels of satisfaction than those who stayed
+- At Job Levels 2 and 4: most employees who left had high level of satisfaction, while those who stayed had high/very high levels of satisfaction
+- At Job Level 3: employees that left has either low or very high levels of satisfaction, while those who stayed had mostly high/very high levels of job satisfaction
 
 At the end correlation plots are presented to show differences in correlation for employees who stayed in the company vs those who left.    
+![Corr](https://github.com/vita-levytska/HR-Analytics/blob/main/Visualizations/corr_plot.jpeg)
+
+Comparing the correlations for employees who left the company and those who stayed we see that:
+- Monthly income has higher correlations with all variables but Total Working Years for employees that left, than for those who stayed
+- Years at Company has higher correlation with total working years for those who quit their job
+- Years at Company and Years with Current manager have almost the same correlation for both those who quit their job and those that did not
+- Years since Last Promotion has higher correlation with all the variables for those who quit than for those who did not
+
 
 # Model Tuning and Testing
 
@@ -85,6 +107,10 @@ Since the response is binary, logistic regression was chosen as binary model. Ne
 To measure and compare the performance of our models we will use **Recall** because we want to measure how many of employees that quit their job we labeled correctly. If we can identify the employees that are going to leave the company potentially, we can target them with specific programs or trainings to prevent their attrition. The costs of targeting the employees who may potentially leave (even if they are not going to) is lower than looking for a new employee and train them if we fail to identify those at risk of attrition.   
 
 After performing hyperparameter tuning, SVM had the highest recall value, thus it is our best model. 
+
+Below are the precision-recall curves
+
+![EDA4](https://github.com/vita-levytska/HR-Analytics/blob/main/Visualizations/pr_curve.jpeg)
 
 
 # Limitations and Discussion
