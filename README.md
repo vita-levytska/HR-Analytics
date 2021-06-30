@@ -82,9 +82,7 @@ Employees that have education level below college or Doctorate degrees left the 
 In this part we look at different job levels more in depths in how they influence attrition along with other factors.    
 ![EDA4](https://github.com/vita-levytska/HR-Analytics/blob/main/Visualizations/eda4_job_satisfaction.jpeg)
 
-- At Job Levels 1 and 5: the employees who left had lower levels of satisfaction than those who stayed
-- At Job Levels 2 and 4: most employees who left had high level of satisfaction, while those who stayed had high/very high levels of satisfaction
-- At Job Level 3: employees that left has either low or very high levels of satisfaction, while those who stayed had mostly high/very high levels of job satisfaction
+The employees at entry job level that stayed in the company had higher job satisfaction.
 
 At the end correlation plots are presented to show differences in correlation for employees who stayed in the company vs those who left.    
 ![Corr](https://github.com/vita-levytska/HR-Analytics/blob/main/Visualizations/corr_plot.jpeg)
